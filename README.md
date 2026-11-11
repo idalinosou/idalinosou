@@ -19,20 +19,21 @@
 
 Comecei a programar em novembro de 2025, período em que montei a base da minha suíte de projetos. Pausei os estudos no início de 2026 e retomei em outubro do mesmo ano, agora com foco em conquistar a primeira vaga como desenvolvedor full stack.
 
-Na prática, construí sete projetos completos — do jogo em Java puro ao banco com API REST — cada um com regras de negócio próprias, testes automatizados e interface web publicada. Também desenvolvi o site institucional de uma transportadora, com identidade visual, vídeo de fundo e foco em conversão.
+Na prática, construí oito projetos completos — do jogo em Java puro ao sistema de pedidos com mensageria — cada um com regras de negócio próprias, testes automatizados e interface web publicada. Também desenvolvi o site institucional de uma transportadora, com identidade visual, vídeo de fundo e foco em conversão.
 
-Hoje estudo **Spring Data JPA, SQL, testes de integração e boas práticas de API REST**.
+Hoje estudo **Spring Data JPA, SQL, testes de integração, mensageria e boas práticas de API REST**.
 
 ## Tecnologias
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=java,spring,js,html,css,git,github&theme=dark" alt="Java, Spring, JavaScript, HTML, CSS, Git e GitHub" />
+  <img src="https://skillicons.dev/icons?i=java,spring,js,ts,nodejs,html,css,git,github&theme=dark" alt="Java, Spring, JavaScript, TypeScript, Node.js, HTML, CSS, Git e GitHub" />
 </div>
 
 ## Projetos
 
 | Projeto | O que faz | Stack | Demo |
 | --- | --- | --- | --- |
+| **[vant.orders](https://github.com/idalinosou/vant.orders)** | Pedidos com cotação de frete assíncrona: a API publica um evento, um worker calcula o frete e devolve a cotação | Java · Spring Boot · RabbitMQ · TypeScript · Angular | em breve |
 | **[vant.bank](https://github.com/idalinosou/vant.bank)** | Contas, depósitos e transferências com validação de saldo e 25 testes de integração | Java · Spring Boot · JPA | [abrir](https://idalinosou.github.io/vant.bank/) |
 | **[vant.store](https://github.com/idalinosou/vant.store)** | Loja com catálogo, carrinho e painel administrativo em duas interfaces | Java · Spring Boot · JPA | [abrir](https://idalinosou.github.io/vant.store/) |
 | **[vant.finance](https://github.com/idalinosou/vant.finance)** | Controle de receitas e despesas por categoria com dashboard e gráficos | Java · Spring Boot · JPA | [abrir](https://idalinosou.github.io/vant.finance/) |
