@@ -33,7 +33,7 @@ Hoje estudo **Spring Data JPA, SQL, testes de integração, mensageria e boas pr
 
 | Projeto | O que faz | Stack | Demo |
 | --- | --- | --- | --- |
-| **[vant.orders](https://github.com/idalinosou/vant.orders)** | Pedidos com cotação de frete assíncrona: a API publica um evento, um worker calcula o frete e devolve a cotação | Java · Spring Boot · RabbitMQ · TypeScript · Angular | em breve |
+| **[vant.orders](https://github.com/idalinosou/vant.orders)** | Pedidos com cotação de frete assíncrona: a API publica um evento, um worker calcula o frete e devolve a cotação | Java · Spring Boot · RabbitMQ · TypeScript · Angular | [abrir](https://idalinosou.github.io/vant.orders/) |
 | **[vant.bank](https://github.com/idalinosou/vant.bank)** | Contas, depósitos e transferências com validação de saldo e 25 testes de integração | Java · Spring Boot · JPA | [abrir](https://idalinosou.github.io/vant.bank/) |
 | **[vant.store](https://github.com/idalinosou/vant.store)** | Loja com catálogo, carrinho e painel administrativo em duas interfaces | Java · Spring Boot · JPA | [abrir](https://idalinosou.github.io/vant.store/) |
 | **[vant.finance](https://github.com/idalinosou/vant.finance)** | Controle de receitas e despesas por categoria com dashboard e gráficos | Java · Spring Boot · JPA | [abrir](https://idalinosou.github.io/vant.finance/) |
