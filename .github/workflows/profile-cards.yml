@@ -1,0 +1,41 @@
+name: Atualiza cards do perfil
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 * * 1"
+  push:
+    branches: [main]
+    paths:
+      - ".github/scripts/cards.mjs"
+      - ".github/workflows/profile-cards.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Gera os cards
+        run: node .github/scripts/cards.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publica as alterações
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile
+          if git diff --cached --quiet; then
+            echo "Cards sem alteração."
+          else
+            git commit -m "Atualiza cards do perfil"
+            git push
+          fi
